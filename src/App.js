@@ -8,7 +8,7 @@ export default function App() {
       <h1>Hello CodeSandbox</h1>
       <h2>Start editing to see some magic happen!</h2>
       <div className="Board">
-        <table className="Board" cellspacing="0">
+        <table id="Board" cellSpacing="0">
           <tr className="Board">
             <Square />
             <Square />
