@@ -12,6 +12,7 @@ export function Board() {
       let rowHTML = `<tr id="${r}">`;
       for (let c = 0; c < 10; c++) {
         let nodeID = `${r}_${c}`;
+        rowHTML += `<td id="${nodeID}">`;
       }
     }
   }
