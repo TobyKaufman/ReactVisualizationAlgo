@@ -1,11 +1,15 @@
 import { Component, useState } from "react";
 
-export default class Node extends Component {
-  render() {
-    return (
-      <button className="square" onMouseDown={handleClick}>
-        {txt}
-      </button>
-    );
+export function Square() {
+  const [value, setValue] = useState(null);
+
+  function handleClick() {
+    setNum(value + 1);
   }
+
+  return (
+    <button onClick={handleClick} className="square">
+      {value}
+    </button>
+  );
 }
