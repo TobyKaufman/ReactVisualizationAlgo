@@ -2,18 +2,35 @@ import { Square } from "./node";
 import { useState } from "react";
 
 export function Board() {
-  let swag;
+  let grid = [];
   const [speed, setSpeed] = useState(1);
 
-  function generateBoard() {
-    let outStr = "";
-
-    for (let r = 0; r < 7; r++) {
-      let rowHTML = `<tr id="${r}">`;
-      for (let c = 0; c < 10; c++) {
-        let nodeID = `${r}_${c}`;
-        rowHTML += `<td id="${nodeID}">`;
+  
+  function genBoard() {
+    for (let r = 0; r < 15; r++) {
+      let curRow = [];
+      for (let c = 0; c < 25; c++) {
+        curRow.push({ r, c });
       }
+      grid.push(curRow);
     }
+    
+
+    return (
+      <table id="Board" cellSpacing="0">
+        {grid.map((row) => (
+          <tr>
+            {row.map(() => (
+              <Square />
+            ))}
+            
+          </tr>
+        )
+        )}
+  
+      </table>
+  
+    );
   }
+  return genBoard();
 }

@@ -1,15 +1,15 @@
 import { Component, useState } from "react";
 
 export function Square() {
-  const [value, setValue] = useState(null);
+  const [isWall, setIsWall] = useState(false);
 
   function handleClick() {
-    setNum(value + 1);
+    setIsWall(!isWall);
   }
 
   return (
-    <button onClick={handleClick} className="square">
-      {value}
+    <button onClick={handleClick} className={isWall ? 'wall' : 'square'}>
+      {isWall}
     </button>
   );
 }
