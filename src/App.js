@@ -11,6 +11,9 @@ export default function App() {
       <h3>Click on the button to start the visualization</h3>
       <div className="Board">
         <Board />
+        <div>
+          Made by Toby Kaufman 
+        </div>
         
       </div>
     </div>
