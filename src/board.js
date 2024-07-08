@@ -4,6 +4,7 @@ import { useState } from "react";
 export function Board() {
   let grid = [];
   const [speed, setSpeed] = useState(1);
+  let temp;
 
   
   function genBoard() {
