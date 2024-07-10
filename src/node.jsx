@@ -3,8 +3,10 @@ import { Component, useState } from "react";
 export function Square({ endpt }) {
   const [isWall, setIsWall] = useState(false);
   let status = endpt;
+  let isStart;
 
   if (status == 'start') {
+
 
   }
 
