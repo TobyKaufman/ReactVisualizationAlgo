@@ -11,7 +11,7 @@ export function Square({ endpt }) {
   }
 
   if (status == 'start') {
-    
+    let dog;
   }
 
 
