@@ -12,7 +12,7 @@ export default function App() {
       <div className="Board">
         <Board />
         <div>
-          Made by Toby Kaufman 
+          Made by Toby Kaufman friend
         </div>
         
       </div>
