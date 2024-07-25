@@ -1,3 +1,3 @@
-export default function dfs(){
+export default function dfs(input, path, sofar){
     
 }
