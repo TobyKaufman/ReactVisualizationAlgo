@@ -20,7 +20,7 @@ export function Square({ endpt }) {
   }
 
   return (
-    <button onClick={handleClick} className={isWall ? 'wall' : 'square'}>
+    <button onClick={handleClick} className={{status}}>
       {isWall}
     </button>
   );
