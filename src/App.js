@@ -13,7 +13,8 @@ export default function App() {
       <div className="Board">
         <Board />
         <div>
-          Made by Toby Kaufman friend help
+          Made by Toby Kaufman
+          Github Repo:
         </div>
         
       </div>
